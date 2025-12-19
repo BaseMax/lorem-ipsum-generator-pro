@@ -123,9 +123,8 @@ function generateList(isOrdered, itemCount) {
 
 function generateCodeBlock(lineCount) {
     const lines = [];
-    const availableLines = codeSnippets.filter(line => line.trim() !== '');
     
-    for (let i = 0; i < lineCount && i < availableLines.length; i++) {
+    for (let i = 0; i < lineCount && i < codeSnippets.length; i++) {
         lines.push(codeSnippets[i % codeSnippets.length]);
     }
     
