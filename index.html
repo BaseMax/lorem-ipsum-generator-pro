@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lorem Ipsum Generator Pro</h1>
+            <p class="subtitle">Generate placeholder text with custom structure</p>
+        </header>
+
+        <div class="main-content">
+            <div class="controls-panel">
+                <h2>Options</h2>
+                
+                <div class="control-group">
+                    <label for="paragraphs">Number of Paragraphs:</label>
+                    <input type="number" id="paragraphs" min="1" max="50" value="3">
+                </div>
+
+                <div class="control-group">
+                    <label for="wordLimit">Words per Paragraph:</label>
+                    <input type="number" id="wordLimit" min="10" max="500" value="50">
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="includeHeadings" checked>
+                        Include Headings
+                    </label>
+                </div>
+
+                <div class="control-group" id="headingLevelGroup">
+                    <label for="headingLevel">Heading Level:</label>
+                    <select id="headingLevel">
+                        <option value="1">H1</option>
+                        <option value="2" selected>H2</option>
+                        <option value="3">H3</option>
+                        <option value="4">H4</option>
+                        <option value="5">H5</option>
+                        <option value="6">H6</option>
+                    </select>
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="includeOrderedList">
+                        Include Ordered List
+                    </label>
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="includeUnorderedList">
+                        Include Unordered List
+                    </label>
+                </div>
+
+                <div class="control-group" id="listItemsGroup" style="display: none;">
+                    <label for="listItems">List Items:</label>
+                    <input type="number" id="listItems" min="3" max="20" value="5">
+                </div>
+
+                <div class="control-group">
+                    <label>
+                        <input type="checkbox" id="includeCodeBlock">
+                        Include Code Block
+                    </label>
+                </div>
+
+                <div class="control-group" id="codeLinesGroup" style="display: none;">
+                    <label for="codeLines">Code Lines:</label>
+                    <input type="number" id="codeLines" min="3" max="30" value="8">
+                </div>
+
+                <div class="button-group">
+                    <button id="generateBtn" class="btn btn-primary">Generate</button>
+                    <button id="copyBtn" class="btn btn-secondary">Copy to Clipboard</button>
+                </div>
+            </div>
+
+            <div class="preview-panel">
+                <div class="preview-header">
+                    <h2>Preview</h2>
+                    <div class="view-toggle">
+                        <button id="htmlViewBtn" class="btn-toggle active">HTML</button>
+                        <button id="markdownViewBtn" class="btn-toggle">Markdown</button>
+                    </div>
+                </div>
+                
+                <div class="preview-content">
+                    <div id="htmlPreview" class="preview-area active"></div>
+                    <pre id="markdownPreview" class="preview-area markdown-area"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
