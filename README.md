@@ -2,6 +2,12 @@
 
 Generate placeholder text with custom structure including paragraphs, headings, lists, code blocks, and word limits with real-time preview.
 
+![Lorem Ipsum Generator Pro](preview/1.png)
+
+![Lorem Ipsum Generator Pro](preview/2.png)
+
+![Lorem Ipsum Generator Pro](preview/3.png)
+
 ## Features
 
 - **Multiple Paragraphs**: Generate 1-50 paragraphs of lorem ipsum text
